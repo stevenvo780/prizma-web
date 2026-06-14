@@ -1,0 +1,138 @@
+mes,persona,rol,horas_estimadas,metodo
+2021-10,Sebastian,Desarrollador (contratista),9.0,git_sessions
+2021-10,Steven,CEO / CTO / Desarrollador Principal,1.8,git_sessions
+2021-11,Sebastian,Desarrollador (contratista),11.8,git_sessions
+2021-11,Steven,CEO / CTO / Desarrollador Principal,9.5,git_sessions
+2021-12,Sebastian,Desarrollador (contratista),4.5,git_sessions
+2021-12,Steven,CEO / CTO / Desarrollador Principal,3.5,git_sessions
+2022-01,Sebastian,Desarrollador (contratista),38.8,git_sessions
+2022-01,Steven,CEO / CTO / Desarrollador Principal,31.9,git_sessions
+2022-02,Sebastian,Desarrollador (contratista),6.2,git_sessions
+2022-02,Steven,CEO / CTO / Desarrollador Principal,1.8,git_sessions
+2022-03,Steven,CEO / CTO / Desarrollador Principal,17.8,git_sessions
+2022-04,Steven,CEO / CTO / Desarrollador Principal,1.8,git_sessions
+2022-05,Steven,CEO / CTO / Desarrollador Principal,14.2,git_sessions
+2022-06,Steven,CEO / CTO / Desarrollador Principal,1.2,git_sessions
+2022-07,Steven,CEO / CTO / Desarrollador Principal,14.6,git_sessions
+2022-08,Steven,CEO / CTO / Desarrollador Principal,27.4,git_sessions
+2022-09,Steven,CEO / CTO / Desarrollador Principal,1.8,git_sessions
+2022-11,Steven,CEO / CTO / Desarrollador Principal,7.5,git_sessions
+2022-12,Steven,CEO / CTO / Desarrollador Principal,5.5,git_sessions
+2023-01,Steven,CEO / CTO / Desarrollador Principal,8.5,git_sessions
+2023-02,Steven,CEO / CTO / Desarrollador Principal,76.5,git_sessions
+2023-03,Steven,CEO / CTO / Desarrollador Principal,44.2,git_sessions
+2023-04,Steven,CEO / CTO / Desarrollador Principal,23.4,git_sessions
+2023-05,Steven,CEO / CTO / Desarrollador Principal,84.2,git_sessions
+2023-06,Steven,CEO / CTO / Desarrollador Principal,78.5,git_sessions
+2023-07,Steven,CEO / CTO / Desarrollador Principal,33.9,git_sessions
+2023-07,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2023-07,Miguel,Socio / Supervisión,4.0,estimacion
+2023-07,Dani,Soporte TotalPedido,40.0,estimacion
+2023-07,Laura,Ventas (comisiones),20.0,estimacion
+2023-08,Steven,CEO / CTO / Desarrollador Principal,25.5,git_sessions
+2023-08,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2023-08,Miguel,Socio / Supervisión,4.0,estimacion
+2023-08,Dani,Soporte TotalPedido,40.0,estimacion
+2023-09,Steven,CEO / CTO / Desarrollador Principal,1.8,git_sessions
+2023-09,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2023-09,Miguel,Socio / Supervisión,4.0,estimacion
+2023-09,Dani,Soporte TotalPedido,40.0,estimacion
+2023-10,Steven,CEO / CTO / Desarrollador Principal,0.9,git_sessions
+2023-10,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2023-10,Miguel,Socio / Supervisión,4.0,estimacion
+2023-10,Dani,Soporte TotalPedido,40.0,estimacion
+2023-11,Steven,CEO / CTO / Desarrollador Principal,0.9,git_sessions
+2023-11,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2023-11,Miguel,Socio / Supervisión,4.0,estimacion
+2023-11,Dani,Soporte TotalPedido,40.0,estimacion
+2023-12,Steven,CEO / CTO / Desarrollador Principal,0.9,git_sessions
+2023-12,John,Desarrollador (contratista),10.4,git_sessions
+2023-12,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2023-12,Miguel,Socio / Supervisión,4.0,estimacion
+2023-12,Dani,Soporte TotalPedido,40.0,estimacion
+2024-01,Steven,CEO / CTO / Desarrollador Principal,16.8,git_sessions
+2024-01,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2024-01,Miguel,Socio / Supervisión,4.0,estimacion
+2024-01,Dani,Soporte TotalPedido,40.0,estimacion
+2024-02,Steven,CEO / CTO / Desarrollador Principal,3.9,git_sessions
+2024-02,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2024-02,Miguel,Socio / Supervisión,4.0,estimacion
+2024-02,Dani,Soporte TotalPedido,40.0,estimacion
+2024-03,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2024-03,Miguel,Socio / Supervisión,4.0,estimacion
+2024-04,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2024-04,Miguel,Socio / Supervisión,4.0,estimacion
+2024-05,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2024-05,Miguel,Socio / Supervisión,4.0,estimacion
+2024-06,Steven,CEO / CTO / Desarrollador Principal,43.7,git_sessions
+2024-06,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2024-06,Miguel,Socio / Supervisión,4.0,estimacion
+2024-07,Steven,CEO / CTO / Desarrollador Principal,1.8,git_sessions
+2024-07,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2024-07,Miguel,Socio / Supervisión,4.0,estimacion
+2024-08,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2024-08,Miguel,Socio / Supervisión,4.0,estimacion
+2024-09,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2024-09,Miguel,Socio / Supervisión,4.0,estimacion
+2024-10,Steven,CEO / CTO / Desarrollador Principal,0.9,git_sessions
+2024-10,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2024-10,Miguel,Socio / Supervisión,4.0,estimacion
+2024-11,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2024-11,Miguel,Socio / Supervisión,4.0,estimacion
+2024-12,Steven,CEO / CTO / Desarrollador Principal,1.5,git_sessions
+2024-12,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2024-12,Miguel,Socio / Supervisión,4.0,estimacion
+2025-01,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2025-01,Miguel,Socio / Supervisión,4.0,estimacion
+2025-02,Steven,CEO / CTO / Desarrollador Principal,105.6,git_sessions
+2025-02,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2025-02,Miguel,Socio / Supervisión,4.0,estimacion
+2025-03,Steven,CEO / CTO / Desarrollador Principal,279.0,git_sessions
+2025-03,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2025-03,Miguel,Socio / Supervisión,4.0,estimacion
+2025-04,Steven,CEO / CTO / Desarrollador Principal,41.9,git_sessions
+2025-04,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2025-04,Miguel,Socio / Supervisión,4.0,estimacion
+2025-05,Steven,CEO / CTO / Desarrollador Principal,26.6,git_sessions
+2025-05,Juan Diego,Desarrollador (contratista),10.7,git_sessions
+2025-05,Yuliana,Desarrollador (contratista),10.8,git_sessions
+2025-05,Selena,Desarrollador (contratista),0.9,git_sessions
+2025-05,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2025-05,Miguel,Socio / Supervisión,4.0,estimacion
+2025-06,Steven,CEO / CTO / Desarrollador Principal,92.7,git_sessions
+2025-06,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2025-06,Miguel,Socio / Supervisión,4.0,estimacion
+2025-07,Steven,CEO / CTO / Desarrollador Principal,50.0,git_sessions
+2025-07,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2025-07,Miguel,Socio / Supervisión,4.0,estimacion
+2025-08,Steven,CEO / CTO / Desarrollador Principal,208.0,git_sessions
+2025-08,Juan Diego,Desarrollador (contratista),5.3,git_sessions
+2025-08,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2025-08,Miguel,Socio / Supervisión,4.0,estimacion
+2025-09,Steven,CEO / CTO / Desarrollador Principal,26.8,git_sessions
+2025-09,Juan Diego,Desarrollador (contratista),3.2,git_sessions
+2025-09,Yuliana,Desarrollador (contratista),0.9,git_sessions
+2025-09,JP,Desarrollador (contratista),0.9,git_sessions
+2025-09,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2025-09,Miguel,Socio / Supervisión,4.0,estimacion
+2025-10,Steven,CEO / CTO / Desarrollador Principal,26.8,git_sessions
+2025-10,JP,Desarrollador (contratista),5.4,git_sessions
+2025-10,Vrilli,Desarrollador (contratista),5.4,git_sessions
+2025-10,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2025-10,Miguel,Socio / Supervisión,4.0,estimacion
+2025-11,Steven,CEO / CTO / Desarrollador Principal,29.3,git_sessions
+2025-11,JP,Desarrollador (contratista),8.4,git_sessions
+2025-11,Vrilli,Desarrollador (contratista),1.9,git_sessions
+2025-11,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2025-11,Miguel,Socio / Supervisión,4.0,estimacion
+2025-12,Steven,CEO / CTO / Desarrollador Principal,49.7,git_sessions
+2025-12,Isa,Dir. Operaciones / Diseño / UI·UX,77.0,estimacion
+2025-12,Miguel,Socio / Supervisión,4.0,estimacion
+2026-01,Steven,CEO / CTO / Desarrollador Principal,80.4,git_sessions
+2026-02,Steven,CEO / CTO / Desarrollador Principal,171.3,git_sessions
+2026-03,Steven,CEO / CTO / Desarrollador Principal,5.5,git_sessions
+2025-11,QA Tester,Testing externo,2.4,pagos
+2025-12,QA Tester,Testing externo,2.4,pagos
+2026-01,QA Tester,Testing externo,2.4,pagos
+2026-02,QA Tester,Testing externo,2.4,pagos
+2026-03,QA Tester,Testing externo,2.4,pagos

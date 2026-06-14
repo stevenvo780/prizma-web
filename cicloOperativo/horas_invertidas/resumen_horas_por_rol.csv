@@ -1,0 +1,14 @@
+persona,rol,horas_estimadas,commits,metodo,confianza
+Isa,Dir. Operaciones / Diseño / UI·UX,2310,0,Estimación (3.5h/día × 22 días/mes),Estimación
+Steven,CEO / CTO / Desarrollador Principal,1782,3739,Git sessions × 1.8,Alta
+Dani,Soporte TotalPedido,320,0,Estimación (40h/mes × 8 meses),Estimación
+Miguel,Socio / Supervisión,120,0,Estimación (4h/mes),Estimación
+Sebastian,Desarrollador (contratista),70,107,Git sessions × 1.8,Alta
+Laura,Ventas (comisiones),20,0,Estimación puntual,Estimación
+Juan Diego,Desarrollador (contratista),19,29,Git sessions × 1.8,Media
+JP,Desarrollador (contratista),15,26,Git sessions × 1.8,Media
+QA Tester,Testing externo,12,0,Pagos ($600K / $50K/h),Alta
+Yuliana,Desarrollador (contratista),12,9,Git sessions × 1.8,Media
+John,Desarrollador (contratista),10,16,Git sessions × 1.8,Media
+Vrilli,Desarrollador (contratista),7,14,Git sessions × 1.8,Media
+Selena,Desarrollador (contratista),1,6,Git sessions × 1.8,Media

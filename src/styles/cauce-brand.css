@@ -1,0 +1,51 @@
+/* ============================================================================
+   Olympo brand bridge — maps the existing "Humanizar" framework variables to
+   Olympo design-system tokens so buttons / links / headings adopt the "portal"
+   module accent. Loaded AFTER ./app.css and AFTER @olympo/ui/styles.css.
+   This is ADDITIVE: it only re-points existing custom properties to tokens.
+   ============================================================================ */
+
+/* Re-point the app's own brand variables to Olympo tokens.
+   The portal accent is set on the .cui-root wrapper (data-module="portal"),
+   so we read it there; :root keeps a sane fallback for global rules. */
+:root {
+  --brand: var(--c-accent-module, #087c7b);
+  --brand-dark: var(--c-primary-700, #065f5f);
+  --accent: var(--c-primary-500, #13a8a5);
+}
+
+/* The Olympo root carries the per-module accent; mirror it onto the
+   framework variables so anything rendered inside the wrapper is on-brand. */
+.cui-root[data-module] {
+  --brand: var(--c-accent-module);
+  --accent: var(--c-primary-500);
+  --brand-dark: var(--c-primary-700);
+}
+
+/* Typography: adopt the Olympo sans/display families. */
+body {
+  font-family: var(--c-font-sans);
+}
+
+.cui-root h1,
+.cui-root h2,
+.cui-root h3,
+.cui-root h4 {
+  font-family: var(--c-font-display);
+}
+
+/* Primary button — adopt the module accent. */
+.btn-primary {
+  background: var(--c-accent-module);
+  color: var(--c-on-primary, #ffffff);
+}
+
+.btn-primary:hover {
+  background: var(--c-primary-hover, var(--c-accent-module));
+  filter: none;
+}
+
+/* Links pick up the primary token. */
+a {
+  color: var(--c-primary);
+}

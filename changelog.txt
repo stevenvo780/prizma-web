@@ -1,0 +1,22 @@
+Proyecto Humanizar
+
+2026-02-17
+- Reestructura de precios por producto (secciones separadas con fuente y fecha de verificacion).
+- Correccion de precios: EMW actualizado a $88.000 y Mera Vuelta/Agora completados por planes.
+- Graf actualizado con planes: $30.000, $80.000 y $150.000.
+- Sinergia POS incorporado desde ruta publica de suscripcion (10/20/50, anual -20%).
+- Terminal actualizado con precios detectados en modal de suscripcion in-app (10/20/50, anual -20%).
+- Descarga y montaje local de iconos/logos reales de apps.
+- Descarga y montaje local de logos de clientes desde tiendas publicas de Graf.
+- Refuerzo visual por app: iconos/logos en secciones de productos y planes.
+- Ajuste de paleta para mantener coherencia con el color de marca (#087c7b).
+- Clientes importantes cambiados de genericos a clientes reales (sin publicar cifras internas).
+- Ajuste de identidad visual: logo de marca restaurado y paleta corporativa aplicada.
+- Seccion nueva Empresa: mision, vision y propuesta de valor.
+- Seccion nueva Clientes importantes en landing y documentacion.
+- Migracion completa de landing a React + Vite.
+- Nuevo diseno comercial (hero, productos, planes, cumplimiento, contacto).
+- Inclusion de productos nuevos: Agora y Terminal.
+- Actualizacion de planes y precios visibles.
+- Formulario React con EmailJS y consentimiento de datos.
+- Actualizacion de despliegue: Docker multi-stage + Nginx SPA + vercel.json para Vite.

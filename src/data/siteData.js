@@ -81,12 +81,12 @@ export const importantClients = [
 
 export const testimonials = [
   {
-    quote: 'Con Graf pasamos de responder manual a tener un flujo de ventas diario mucho mas ordenado.',
+    quote: 'Con Hermes (antes Graf) pasamos de responder manual a tener un flujo de ventas diario mucho mas ordenado.',
     author: 'Equipo comercial',
     company: 'Punto Naranja',
   },
   {
-    quote: 'Con EMW activamos campañas por WhatsApp con mejor seguimiento y conversion comercial.',
+    quote: 'Con Iris (antes EMW) activamos campañas por WhatsApp con mejor seguimiento y conversion comercial.',
     author: 'Direccion comercial',
     company: 'MCA',
   },
@@ -107,37 +107,37 @@ export const documentedSignals = {
 
 export const commercialKpis = [
   { value: '60+', label: 'Clientes' },
-  { value: '1M+', label: 'EMW msg' },
-  { value: '650+', label: 'Graf/dia' },
-  { value: '2000', label: 'Sinergia' },
+  { value: '1M+', label: 'Iris msg' },
+  { value: '650+', label: 'Hermes/dia' },
+  { value: '2000', label: 'Talanton' },
   { value: '150K', label: 'Agora COP' },
   { value: '50', label: 'Terminal USD' },
 ];
 
 export const organizationOverview = {
-  who: 'Olympo integra software comercial y operativo para pymes y marcas en crecimiento en Colombia.',
+  who: 'Prizma integra software comercial y operativo para pymes y marcas en crecimiento en Colombia.',
   problem:
     'Resolvemos la fragmentacion entre ventas, operacion y soporte conectando el flujo desde el primer contacto hasta la entrega y seguimiento.',
   stage:
-    'Scale-up temprano con foco en escalar Graf y EMW como productos estrella.',
+    'Scale-up temprano con foco en escalar Hermes y Iris como productos estrella.',
 };
 
 export const portfolioArchitecture = [
   {
     line: 'Comercial',
-    apps: 'EMW + Graf',
+    apps: 'Iris + Hermes',
     audience: 'Equipos de ventas y marketing por WhatsApp.',
     when: 'Cuando la empresa necesita captar, convertir y reactivar clientes de forma consistente.',
   },
   {
     line: 'Operacion',
-    apps: 'Mera Vuelta + Sinergia POS',
+    apps: 'Talaria + Talanton',
     audience: 'Equipos de tienda, caja y logistica.',
     when: 'Cuando se requiere control de pedidos, facturacion y entregas con trazabilidad.',
   },
   {
     line: 'Facturacion',
-    apps: 'Sinergia POS + Fiar',
+    apps: 'Talanton + Pistis',
     audience: 'Equipos administrativos y de cartera.',
     when: 'Cuando se necesita continuidad entre facturacion y gestion de cobro.',
   },
@@ -204,12 +204,12 @@ export const implementationPath = [
 export const commercialModel = [
   {
     bundle: 'Growth Comercial',
-    includes: 'EMW + Graf',
+    includes: 'Iris + Hermes',
     objective: 'Aumentar conversion por WhatsApp y ordenar pipeline.',
   },
   {
     bundle: 'Operacion Unificada',
-    includes: 'Graf + Sinergia POS + Mera Vuelta',
+    includes: 'Hermes + Talanton + Talaria',
     objective: 'Conectar venta, caja y entrega con trazabilidad completa.',
   },
   {
@@ -231,13 +231,13 @@ export const successCases = [
     client: 'Punto Naranja',
     sector: 'Retail',
     before: 'Atencion manual por chat sin trazabilidad comercial.',
-    after: 'Flujo comercial ordenado con Graf y mejor respuesta en ventas.',
+    after: 'Flujo comercial ordenado con Hermes y mejor respuesta en ventas.',
   },
   {
     client: 'MCA',
     sector: 'Comercio digital',
     before: 'Campañas de WhatsApp sin seguimiento estructurado.',
-    after: 'Activaciones comerciales con EMW y seguimiento por segmentos.',
+    after: 'Activaciones comerciales con Iris y seguimiento por segmentos.',
   },
 ];
 
@@ -258,7 +258,7 @@ export const operationQuality = {
 export const roadmapTimeline = [
   {
     horizon: '0-3 meses',
-    focus: 'Consolidar traccion de Graf y EMW con mas playbooks por sector.',
+    focus: 'Consolidar traccion de Hermes y Iris con mas playbooks por sector.',
   },
   {
     horizon: '3-6 meses',
@@ -279,7 +279,7 @@ export const culturePrinciples = [
 
 export const products = [
   {
-    name: 'EMW',
+    name: 'Iris',
     tag: 'Marketing por WhatsApp',
     description:
       'Envios masivos y personalizados por WhatsApp para activar bases de clientes, recuperar ventas y acelerar campañas.',
@@ -287,7 +287,7 @@ export const products = [
     icon: '/assets/icons/apps/emw.svg',
   },
   {
-    name: 'Graf',
+    name: 'Hermes',
     tag: 'Comercio conversacional',
     description:
       'Catalogo y carrito conectado a WhatsApp para vender con procesos simples, rapidos y medibles.',
@@ -295,7 +295,7 @@ export const products = [
     icon: '/assets/icons/apps/graf.svg',
   },
   {
-    name: 'Mera Vuelta',
+    name: 'Talaria',
     tag: 'Logistica de entregas',
     description:
       'Asignacion automatica de domiciliarios, seguimiento de pedidos y reportes operativos de cada entrega.',
@@ -303,7 +303,7 @@ export const products = [
     icon: '/assets/icons/apps/meravuelta.png',
   },
   {
-    name: 'Sinergia POS',
+    name: 'Talanton',
     tag: 'Punto de venta',
     description:
       'POS para control de ventas e inventario en tienda fisica con operacion estable para el dia a dia.',
@@ -327,7 +327,7 @@ export const products = [
     icon: '/assets/icons/apps/terminal.png',
   },
   {
-    name: 'Fiar',
+    name: 'Pistis',
     tag: 'Producto en desarrollo',
     description:
       'Gestion digital de creditos y prestamos para negocios que requieren trazabilidad y control.',
@@ -351,7 +351,7 @@ export const pricingByProduct = [
     ],
   },
   {
-    product: 'Mera Vuelta',
+    product: 'Talaria',
     icon: '/assets/icons/apps/meravuelta.png',
     sourceUrl: 'https://www.meravuelta.com/pricing.html',
     sourceNote: 'Precios publicos verificados',
@@ -366,7 +366,7 @@ export const pricingByProduct = [
     ],
   },
   {
-    product: 'EMW',
+    product: 'Iris',
     icon: '/assets/icons/apps/emw.svg',
     sourceUrl: 'https://emw.humanizar.cloud/plans',
     sourceNote: 'Plan visible en pagina publica',
@@ -377,7 +377,7 @@ export const pricingByProduct = [
     ],
   },
   {
-    product: 'Sinergia POS',
+    product: 'Talanton',
     icon: '/assets/icons/apps/sinergia.svg',
     sourceUrl: 'https://www.sinergia-pos.com/subscribe',
     sourceNote: 'Precios visibles en app publica de suscripcion',
@@ -405,7 +405,7 @@ export const pricingByProduct = [
     ],
   },
   {
-    product: 'Graf',
+    product: 'Hermes',
     icon: '/assets/icons/apps/graf.svg',
     sourceUrl: 'https://www.graf.com.co/graf',
     sourceNote: 'Tarifario comercial confirmado por administracion',
@@ -418,7 +418,7 @@ export const pricingByProduct = [
     ],
   },
   {
-    product: 'Fiar',
+    product: 'Pistis',
     icon: '/assets/icons/apps/fiar.png',
     sourceUrl: 'https://fiar.humanizar.cloud',
     sourceNote: 'Producto en desarrollo',
@@ -432,7 +432,7 @@ export const pricingByProduct = [
 
 export const pricingHighlights = [
   {
-    product: 'Graf',
+    product: 'Hermes',
     icon: '/assets/icons/apps/graf.svg',
     price: '$30.000/mes',
     note: 'Incluye plan gratuito',

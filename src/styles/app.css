@@ -1,5 +1,5 @@
 :root {
-  /* Olympo brand palette — Corriente (teal) + Caudal (coral) */
+  /* Prizma brand palette — Corriente (teal) + Caudal (coral) */
   --bg: #051a1a;
   --bg-soft: #082828;
   --surface: #0d3535;
@@ -238,8 +238,8 @@ h1 {
 }
 
 .hero-logos a {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 12px;
   border: 1px solid rgba(166, 199, 199, 0.26);
   background: rgba(255, 255, 255, 0.94);
@@ -292,7 +292,8 @@ h1 {
   margin-bottom: 0.9rem;
   overflow: hidden;
   cursor: grab;
-  touch-action: none;
+  /* Allow vertical pan so users can scroll past the widget on touch devices */
+  touch-action: pan-y;
 }
 
 .ecosystem-manual-wrap::before {
@@ -2028,8 +2029,8 @@ h1 {
   }
 
   .hero-logos a {
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
   }
 
   .hero-logos img {
@@ -2450,5 +2451,122 @@ h1 {
   50% {
     transform: translateY(-1px);
     filter: brightness(1.06);
+  }
+}
+
+/* ─── A11Y: screen-reader-only utility ─────────────────────────────────── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ─── A11Y: mobile hamburger menu ──────────────────────────────────────── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 8px;
+  background: transparent;
+  border: 1px solid rgba(166, 199, 199, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.nav-hamburger span {
+  display: block;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-hamburger:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem 1rem;
+  background: rgba(5, 26, 26, 0.97);
+  border-top: 1px solid var(--line);
+}
+
+.nav-mobile-link {
+  display: block;
+  padding: 0.6rem 0.5rem;
+  color: var(--text);
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.nav-mobile-link:hover,
+.nav-mobile-link:focus-visible {
+  background: rgba(255, 255, 255, 0.07);
+  outline: none;
+}
+
+@media (max-width: 940px) {
+  .nav-hamburger {
+    display: flex;
+  }
+}
+
+/* ─── A11Y: carousel pause button ──────────────────────────────────────── */
+.carousel-pause-btn {
+  background: transparent;
+  border: 1px solid rgba(166, 199, 199, 0.3);
+  color: var(--muted);
+  font-size: 0.78rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.carousel-pause-btn:hover,
+.carousel-pause-btn:focus-visible {
+  color: var(--text);
+  border-color: var(--accent);
+  outline: none;
+}
+
+.clients-carousel-header,
+.case-carousel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.case-carousel-header h3 {
+  margin: 0;
+}
+
+/* ─── A11Y: prefers-reduced-motion — disable all continuous animations ─── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

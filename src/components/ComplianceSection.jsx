@@ -1,3 +1,4 @@
+import { Card, CardBody } from 'prizma-ui';
 import { complianceChecklist } from '../data/siteData';
 
 export function ComplianceSection() {
@@ -14,7 +15,11 @@ export function ComplianceSection() {
         </div>
         <ul>
           {complianceChecklist.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item} style={{ padding: 0, border: 0, background: 'none', borderRadius: 0 }}>
+              <Card interactive>
+                <CardBody>{item}</CardBody>
+              </Card>
+            </li>
           ))}
         </ul>
       </div>

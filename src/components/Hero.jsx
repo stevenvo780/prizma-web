@@ -1,24 +1,31 @@
+import { Button, Hero as HeroShell, MetricGrid } from 'prizma-ui';
 import { EcosystemGraph } from './EcosystemGraph';
 import { heroProof, importantClients } from '../data/siteData';
 
 export function Hero() {
   const heroClients = importantClients.slice(0, 6);
 
+  const metrics = heroProof.map((item) => ({
+    id: item.label,
+    label: item.label,
+    value: item.value,
+  }));
+
   return (
-    <section className="hero" id="top">
+    <HeroShell id="top" className="hero">
       <div className="container hero-grid">
         <div>
           <p className="eyebrow">Laboratorio de Democratización Tecnológica</p>
           <h1>La ciencia de sistemas al servicio del empresario visionario.</h1>
           <p className="hero-copy">
-            Olympo es un organismo de microservicios independientes diseñado por científicos, filósofos y estrategas de campo. Hacemos accesible la tecnología más avanzada para transformar la operación real en resultados exponenciales.
+            Prizma es un organismo de microservicios independientes diseñado por científicos, filósofos y estrategas de campo. Hacemos accesible la tecnología más avanzada para transformar la operación real en resultados exponenciales.
           </p>
           <div className="hero-cta-row">
-            <a className="btn btn-primary" href="#contacto">
-              Agendar demo
+            <a href="#contacto">
+              <Button variant="primary">Agendar demo</Button>
             </a>
-            <a className="btn btn-secondary" href="#planes">
-              Ver planes
+            <a href="#planes">
+              <Button variant="secondary">Ver planes</Button>
             </a>
           </div>
           <div className="start-path">
@@ -48,16 +55,14 @@ export function Hero() {
         </div>
         <div className="hero-visual">
           <EcosystemGraph />
-          <div className="metric-grid">
-            {heroProof.map((item) => (
-              <article key={item.label}>
-                <strong>{item.value}</strong>
-                <span>{item.label}</span>
-              </article>
-            ))}
-          </div>
+          <MetricGrid
+            metrics={metrics}
+            aria-label="Metricas clave"
+            className="metric-grid"
+            gap="sm"
+          />
         </div>
       </div>
-    </section>
+    </HeroShell>
   );
 }

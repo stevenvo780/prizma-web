@@ -1,12 +1,12 @@
-const brandLogo = '/cauce-symbol.svg';
+const brandLogo = '/prizma-symbol.svg';
 
 const links = [
   {
-    label: 'Sitio corporativo',
+    label: 'Prizma',
     href: 'https://www.humanizar.co/',
   },
   {
-    label: 'EMW',
+    label: 'Iris',
     href: 'https://emw.humanizar.cloud/login',
   },
   {
@@ -25,12 +25,12 @@ export function Footer() {
       <div className="container footer-shell">
         <div>
           <p className="brand-line">
-            <img src={brandLogo} alt="Olympo" className="footer-logo" />
-            <span>Olympo</span>
+            <img src={brandLogo} alt="Prizma" className="footer-logo" />
+            <span>Prizma</span>
           </p>
           <p>Arquitectura comercial, operativa y tecnica para empresas que quieren escalar en serio.</p>
         </div>
-        <nav aria-label="Navegacion secundaria">
+        <nav aria-label="Navegación secundaria">
           {links.map((link) => (
             <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer">
               {link.label}

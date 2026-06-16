@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { ThemeProvider } from '@olympo/ui';
+import { ThemeProvider } from 'prizma-ui';
 import App from './App';
-import '@olympo/ui/styles.css';
+import 'prizma-ui/styles.css';
 import './styles/app.css';
-import './styles/cauce-brand.css';
+import './styles/prizma-brand.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

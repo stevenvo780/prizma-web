@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-const brandLogo = '/cauce-symbol.svg';
+const brandLogo = '/prizma-symbol.svg';
 
 const center = { x: 50, y: 50 };
 const nodes = [
@@ -8,7 +8,7 @@ const nodes = [
     id: 'fiar',
     x: 50,
     y: 12,
-    label: 'Fiar',
+    label: 'Pistis',
     hint: 'Facturacion y cartera conectada.',
     icon: '/assets/icons/apps/fiar.png',
     href: 'https://fiar.humanizar.cloud',
@@ -17,7 +17,7 @@ const nodes = [
     id: 'emw',
     x: 23,
     y: 24,
-    label: 'EMW',
+    label: 'Iris',
     hint: 'Campanas por WhatsApp que convierten.',
     icon: '/assets/icons/apps/emw.svg',
     href: 'https://emw.humanizar.cloud/login',
@@ -26,7 +26,7 @@ const nodes = [
     id: 'graf',
     x: 77,
     y: 24,
-    label: 'Graf',
+    label: 'Hermes',
     hint: 'Catalogo y ventas conversacionales.',
     icon: '/assets/icons/apps/graf.svg',
     href: 'https://www.graf.com.co/graf',
@@ -35,7 +35,7 @@ const nodes = [
     id: 'mera',
     x: 18,
     y: 54,
-    label: 'Mera Vuelta',
+    label: 'Talaria',
     hint: 'Logistica de pedidos y entregas.',
     icon: '/assets/icons/apps/meravuelta.png',
     href: 'https://www.meravuelta.com/',
@@ -44,7 +44,7 @@ const nodes = [
     id: 'sinergia',
     x: 82,
     y: 54,
-    label: 'Sinergia POS',
+    label: 'Talanton',
     hint: 'POS para tienda e inventario.',
     icon: '/assets/icons/apps/sinergia.svg',
     href: 'https://www.sinergia-pos.com/',
@@ -158,6 +158,9 @@ export function EcosystemGraph() {
   return (
     <div
       className="ecosystem-manual-wrap"
+      role="region"
+      aria-label="Ecosistema Prizma — mapa interactivo de productos"
+      aria-describedby="ecosystem-instructions"
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
@@ -165,6 +168,9 @@ export function EcosystemGraph() {
       onPointerCancel={handlePointerUp}
       onWheel={handleWheel}
     >
+      <p id="ecosystem-instructions" className="sr-only">
+        Mapa interactivo. Arrastra para mover, usa la rueda del ratón para hacer zoom. Cada nodo es un enlace al producto.
+      </p>
       <div className="ecosystem-viewport">
         <div className="ecosystem-scene" style={{ transform: sceneTransform }}>
           <svg className="ecosystem-manual-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
@@ -202,7 +208,7 @@ export function EcosystemGraph() {
           </svg>
 
           <div className="ecosystem-manual-core">
-            <img src={brandLogo} alt="Olympo" loading="lazy" />
+            <img src={brandLogo} alt="Prizma" loading="lazy" />
           </div>
 
           {nodes.map((node) => (

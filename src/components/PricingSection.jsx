@@ -1,3 +1,4 @@
+import { Badge, Button, Card, CardBody } from 'prizma-ui';
 import { pricingByProduct, pricingHighlights } from '../data/siteData';
 
 export function PricingSection() {
@@ -39,45 +40,49 @@ export function PricingSection() {
           {pricingByProduct.map((entry) => {
             const recommendedIndex = getRecommendedIndex(entry.tiers);
             return (
-              <article key={entry.product} className="price-product-card">
-                <div className="price-product-layout">
-                  <div className="price-product-intro">
-                    <div className="price-product-head">
-                      <img src={entry.icon} alt={`${entry.product} icono`} className="plan-icon" loading="lazy" />
-                      <h3>{entry.product}</h3>
-                    </div>
-                    <p className="price-meta">
-                      Verificado: {entry.verifiedAt} ·{' '}
-                      <a href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">
-                        fuente
-                      </a>
-                    </p>
-                    <p className="price-meta">{entry.sourceNote}</p>
-                  </div>
-                  <div className="price-lines">
-                    {entry.tiers.map((tier, idx) => (
-                      <div
-                        key={`${entry.product}-${tier.name}`}
-                        className={`price-line${idx === recommendedIndex ? ' recommended' : ''}`}
-                      >
-                        <span className="price-line-name">{tier.name}</span>
-                        {idx === recommendedIndex && <em className="price-line-badge">Recomendado</em>}
-                        <strong className="price-line-value">{tier.price}</strong>
-                        <span className="price-line-detail">{tier.detail}</span>
+              <Card key={entry.product}>
+                <CardBody>
+                  <div className="price-product-layout">
+                    <div className="price-product-intro">
+                      <div className="price-product-head">
+                        <img src={entry.icon} alt={`${entry.product} icono`} className="plan-icon" loading="lazy" />
+                        <h3>{entry.product}</h3>
                       </div>
-                    ))}
+                      <p className="price-meta">
+                        Verificado: {entry.verifiedAt} ·{' '}
+                        <a href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">
+                          fuente
+                        </a>
+                      </p>
+                      <p className="price-meta">{entry.sourceNote}</p>
+                    </div>
+                    <div className="price-lines">
+                      {entry.tiers.map((tier, idx) => (
+                        <div
+                          key={`${entry.product}-${tier.name}`}
+                          className={`price-line${idx === recommendedIndex ? ' recommended' : ''}`}
+                        >
+                          <span className="price-line-name">{tier.name}</span>
+                          {idx === recommendedIndex && (
+                            <Badge tone="primary" className="price-line-badge">Recomendado</Badge>
+                          )}
+                          <strong className="price-line-value">{tier.price}</strong>
+                          <span className="price-line-detail">{tier.detail}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              </article>
+                </CardBody>
+              </Card>
             );
           })}
         </div>
         <div className="pricing-cta-row">
-          <a className="btn btn-primary" href="#contacto">
-            Quiero recomendacion personalizada
+          <a href="#contacto">
+            <Button variant="primary">Quiero recomendacion personalizada</Button>
           </a>
-          <a className="btn btn-secondary" href="#productos">
-            Volver a productos
+          <a href="#productos">
+            <Button variant="secondary">Volver a productos</Button>
           </a>
         </div>
       </div>

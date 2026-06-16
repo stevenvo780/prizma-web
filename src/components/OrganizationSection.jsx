@@ -1,3 +1,4 @@
+import { Card, CardBody, Tag } from 'prizma-ui';
 import {
   commercialModel,
   culturePrinciples,
@@ -11,14 +12,14 @@ import {
 } from '../data/siteData';
 
 const appIcons = {
-  EMW: '/assets/icons/apps/emw.svg',
-  Graf: '/assets/icons/apps/graf.svg',
-  'Mera Vuelta': '/assets/icons/apps/meravuelta.png',
-  'Sinergia POS': '/assets/icons/apps/sinergia.svg',
+  Iris: '/assets/icons/apps/emw.svg',
+  Hermes: '/assets/icons/apps/graf.svg',
+  Talaria: '/assets/icons/apps/meravuelta.png',
+  Talanton: '/assets/icons/apps/sinergia.svg',
   Agora: '/assets/icons/apps/agora.svg',
   Terminal: '/assets/icons/apps/terminal.png',
   Conectores: '/assets/icons/apps/fiar.png',
-  Fiar: '/assets/icons/apps/fiar.png',
+  Pistis: '/assets/icons/apps/fiar.png',
 };
 
 function PortfolioLane({ lane }) {
@@ -43,91 +44,105 @@ export function OrganizationSection() {
       <div className="container orgv-shell">
         <div className="section-head">
           <p className="eyebrow">Organización y Visión</p>
-          <h2>El Organismo de Innovación Olympo</h2>
+          <h2>El Organismo de Innovación Prizma</h2>
         </div>
 
         <div className="orgv-top">
-          <article className="orgv-kpi">
-            <span>Modelo</span>
-            <strong>Bootstrapping Soberano</strong>
-            <p>{organizationOverview.stage}</p>
-          </article>
-          <article className="orgv-kpi">
-            <span>Misión</span>
-            <strong>Democratización Tecnológica</strong>
-            <p>{organizationOverview.problem}</p>
-          </article>
-          <article className="orgv-kpi focus">
-            <span>Productos estrella</span>
-            <strong>Graf + EMW</strong>
-            <p>Traccion comercial y conversion por WhatsApp.</p>
-          </article>
+          <Card>
+            <CardBody className="orgv-kpi">
+              <span>Modelo</span>
+              <strong>Bootstrapping Soberano</strong>
+              <p>{organizationOverview.stage}</p>
+            </CardBody>
+          </Card>
+          <Card>
+            <CardBody className="orgv-kpi">
+              <span>Misión</span>
+              <strong>Democratización Tecnológica</strong>
+              <p>{organizationOverview.problem}</p>
+            </CardBody>
+          </Card>
+          <Card>
+            <CardBody className="orgv-kpi focus">
+              <span>Productos estrella</span>
+              <strong>Hermes + Iris</strong>
+              <p>Traccion comercial y conversion por WhatsApp.</p>
+            </CardBody>
+          </Card>
         </div>
 
         <div className="orgv-grid">
-          <article className="orgv-card wide">
-            <h3>Arquitectura de portafolio</h3>
-            <div className="orgv-lanes">
-              {portfolioArchitecture.map((lane) => (
-                <PortfolioLane key={lane.line} lane={lane} />
-              ))}
-            </div>
-          </article>
+          <Card>
+            <CardBody className="orgv-card wide">
+              <h3>Arquitectura de portafolio</h3>
+              <div className="orgv-lanes">
+                {portfolioArchitecture.map((lane) => (
+                  <PortfolioLane key={lane.line} lane={lane} />
+                ))}
+              </div>
+            </CardBody>
+          </Card>
 
-          <article className="orgv-card">
-            <h3>Para quien y con que foco</h3>
-            <div className="orgv-chip-wrap">
-              {icpSegments.map((item) => (
-                <span key={item.segment} className="orgv-chip">
-                  {item.segment}
-                </span>
-              ))}
-            </div>
-            <div className="orgv-cases">
-              {successCases.map((item) => (
-                <div key={item.client} className="orgv-case">
-                  <strong>{item.client}</strong>
-                  <span>{item.after}</span>
+          <Card>
+            <CardBody className="orgv-card">
+              <h3>Para quien y con que foco</h3>
+              <div className="orgv-chip-wrap">
+                {icpSegments.map((item) => (
+                  <Tag key={item.segment} tone="module">
+                    {item.segment}
+                  </Tag>
+                ))}
+              </div>
+              <div className="orgv-cases">
+                {successCases.map((item) => (
+                  <div key={item.client} className="orgv-case">
+                    <strong>{item.client}</strong>
+                    <span>{item.after}</span>
+                  </div>
+                ))}
+              </div>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="orgv-card wide">
+              <h3>Ruta de crecimiento del cliente</h3>
+              <div className="orgv-route-inline">
+                {growthRoute.map((item) => (
+                  <p key={item}>{item}</p>
+                ))}
+              </div>
+            </CardBody>
+          </Card>
+
+          <Card>
+            <CardBody className="orgv-card wide">
+              <div className="orgv-dual">
+                <div>
+                  <h3>Bundles</h3>
+                  <div className="orgv-bundles">
+                    {commercialModel.map((bundle) => (
+                      <div key={bundle.bundle} className="orgv-bundle">
+                        <strong>{bundle.bundle}</strong>
+                        <span>{bundle.includes}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              ))}
-            </div>
-          </article>
-
-          <article className="orgv-card wide">
-            <h3>Ruta de crecimiento del cliente</h3>
-            <div className="orgv-route-inline">
-              {growthRoute.map((item) => (
-                <p key={item}>{item}</p>
-              ))}
-            </div>
-          </article>
-
-          <article className="orgv-card wide">
-            <div className="orgv-dual">
-              <div>
-                <h3>Bundles</h3>
-                <div className="orgv-bundles">
-                  {commercialModel.map((bundle) => (
-                    <div key={bundle.bundle} className="orgv-bundle">
-                      <strong>{bundle.bundle}</strong>
-                      <span>{bundle.includes}</span>
-                    </div>
-                  ))}
+                <div>
+                  <h3>Roadmap 3-6-12</h3>
+                  <div className="orgv-roadmap">
+                    {roadmapTimeline.map((item) => (
+                      <div key={item.horizon} className="orgv-road-item">
+                        <strong>{item.horizon}</strong>
+                        <span>{item.focus}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div>
-                <h3>Roadmap 3-6-12</h3>
-                <div className="orgv-roadmap">
-                  {roadmapTimeline.map((item) => (
-                    <div key={item.horizon} className="orgv-road-item">
-                      <strong>{item.horizon}</strong>
-                      <span>{item.focus}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </article>
+            </CardBody>
+          </Card>
         </div>
 
         <div className="orgv-culture">

@@ -1,29 +1,63 @@
+import { useState } from 'react';
+import { Button, Topbar, Nav, NavItem } from 'prizma-ui';
 import { navLinks } from '../data/siteData';
 
-const brandLogo = '/cauce-symbol.svg';
+const brandLogo = '/prizma-symbol.svg';
 
 const whatsappUrl =
-  'https://api.whatsapp.com/send/?phone=%2B573246780067&text=Quiero%20una%20demostracion%20de%20Olympo';
+  'https://api.whatsapp.com/send/?phone=%2B573246780067&text=Quiero%20una%20demostracion%20de%20Prizma';
 
 export function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
-    <header className="header">
+    <Topbar className="header">
       <div className="container nav-shell">
         <a href="#top" className="brand">
-          <img src={brandLogo} alt="Olympo" className="brand-logo" />
-          <span className="brand-text">Olympo</span>
+          <img src={brandLogo} alt="Prizma" className="brand-logo" />
+          <span className="brand-text">Prizma</span>
         </a>
-        <nav className="nav-links" aria-label="Navegacion principal">
+
+        {/* Desktop nav */}
+        <Nav aria-label="Navegación principal" className="nav-links">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href}>
+            <NavItem key={link.href} href={link.href}>
+              {link.label}
+            </NavItem>
+          ))}
+        </Nav>
+
+        {/* Mobile hamburger */}
+        <button
+          className="nav-hamburger"
+          aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-nav"
+          onClick={toggleMenu}
+        >
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+        </button>
+
+        <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+          <Button variant="primary">Agendar llamada</Button>
+        </a>
+      </div>
+
+      {/* Mobile nav drawer */}
+      {menuOpen && (
+        <nav id="mobile-nav" aria-label="Navegación móvil" className="nav-mobile">
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href} onClick={closeMenu} className="nav-mobile-link">
               {link.label}
             </a>
           ))}
         </nav>
-        <a className="btn btn-primary" href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-          Agendar llamada
-        </a>
-      </div>
-    </header>
+      )}
+    </Topbar>
   );
 }
